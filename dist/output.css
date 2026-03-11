@@ -1425,6 +1425,10 @@ html {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -1492,6 +1496,10 @@ html {
 
   .lg\:w-\[65\%\] {
     width: 65%;
+  }
+
+  .lg\:w-\[64\%\] {
+    width: 64%;
   }
 
   .lg\:shrink-0 {
