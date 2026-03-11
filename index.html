@@ -13,22 +13,23 @@
     <meta name="author" content="Carveau" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="canonical" href="https://carveau.com/" />
+    <link rel="canonical" href="https://carveau.netlify.app/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/carveau 3d logo.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://carveau.com/" />
+    <meta property="og:url" content="https://carveau.netlify.app/" />
     <meta property="og:title" content="Carveau — Strategic Product Design" />
     <meta property="og:description" content="Carveau is a design agency focused on building clear, strategic product experiences for startups and companies." />
-    <meta property="og:image" content="https://carveau.com/assets/Logo.svg" />
+    <meta property="og:image" content="https://carveau.netlify.app/assets/preview.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://carveau.com/" />
+    <meta property="twitter:url" content="https://carveau.netlify.app/" />
     <meta property="twitter:title" content="Carveau — Strategic Product Design" />
     <meta property="twitter:description" content="Carveau is a design agency focused on building clear, strategic product experiences for startups and companies." />
     <meta property="twitter:site" content="@CarveauStudio" />
-    <meta property="twitter:image" content="https://carveau.com/assets/Logo.svg" />
+    <meta property="twitter:image" content="https://carveau.netlify.app/assets/preview.png" />
 
     <!-- AI & Search Engine Optimization (Schema Markup) -->
     <script type="application/ld+json">
@@ -66,7 +67,7 @@
 
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black flex flex-col h-screen text-gray-900 font-sans">
+  <body class="bg-black flex flex-col  text-gray-900 font-sans lg:overflow-hidden">
     <!-- NAVBAR -->
     <header
       class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:px-8 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
@@ -129,11 +130,11 @@
     </section>
 
     <!-- MAIN -->
-  <main class="flex flex-col lg:flex-row bg-black w-full flex-1 min-h-0 overflow-hidden">
-
+    <main class="flex flex-col lg:flex-row bg-black w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
-        class="w-full lg:w-[35%] p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px] border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 lg:overflow-y-auto lg:h-full"
+        class="w-full lg:w-[35%] p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
+         border-[rgba(164,164,164,0.5)] md:pt-12 lg:pt-24 lg:px-8 "
       >
        <div class="w-full flex flex-col gap-4">
   <div class="w-full flex flex-row justify-start items-center gap-2">
@@ -181,7 +182,7 @@
        <section class=" bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-auto w-[1%]"></section>
 
       <!-- RIGHT: Scrollable Work Containers -->
-      <section class="w-full lg:w-[64%] bg-white lg:overflow-y-scroll min-h-0 flex-1">
+      <section class="w-full lg:w-[64%] bg-white lg:overflow-y-scroll h-full">
         <div class="flex flex-col bg-white lg:gap-8 ">
          
           <!-- Project 2 -->
