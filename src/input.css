@@ -71,3 +71,6 @@ html {
   display: none; /* Chrome, Safari, Edge */
 }
 
+main, section {
+  box-sizing: border-box;
+}
