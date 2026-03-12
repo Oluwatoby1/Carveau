@@ -70,3 +70,10 @@ html {
 #right-panel::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
+
+@media (min-width: 1024px) {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+}

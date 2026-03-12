@@ -67,7 +67,7 @@
 
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black flex flex-col  text-gray-900 font-sans lg:overflow-hidden">
+  <body class="bg-black flex flex-col text-gray-900 font-sans">
     <!-- NAVBAR -->
     <header
       class="w-full bg-[#f5f5f5] flex items-center px-6 py-4 lg:px-8 lg:py-3 border-b border-gray-200 transition-colors duration-300 sticky top-0 lg:relative z-50 text-gray-900"
@@ -124,11 +124,28 @@
         </div>
       </nav>
     </header>
+
+    <script>
+  (function() {
+    const header = document.querySelector('header');
+    const separator = document.querySelector('header + section');
+    function setHeaderHeight() {
+      const h = header.offsetHeight + (separator ? separator.offsetHeight : 0);
+      document.documentElement.style.setProperty('--header-h', h + 'px');
+    }
+    setHeaderHeight();
+    window.addEventListener('resize', setHeaderHeight);
+    // Re-measure after extensions may have injected elements
+    window.addEventListener('load', setHeaderHeight);
+    setTimeout(setHeaderHeight, 500);
+  })();
+</script>
+
     <!-- top line seperator -->
     <section class="  bg-[repeating-linear-gradient(120deg,#bcbcbc,#bcbcbc_1px,transparent_1px,transparent_4px)] h-5 w-full"></section>
 
     <!-- MAIN -->
-    <main class="flex flex-col lg:flex-row bg-black w-full h-auto lg:h-[calc(100vh-72px)] overflow-hidden">
+    <main class="flex flex-col lg:flex-row bg-black w-full lg:overflow-hidden" style="height: calc(100dvh - var(--header-h, 0px))">
       <!-- LEFT: Hero Text (static on desktop, normal flow on mobile) -->
       <section
         class="w-full lg:w-[35%] shrink-0 p-6 lg:p-12 flex flex-col gap-5 justify-start bg-black border-b border-[1px]
